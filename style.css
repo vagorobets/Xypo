@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #f67c92;
+    --grey-color: #777;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    block-size: cover;
+}
+
+.container {
+    margin: 0 100px 0 100px;
+}
+
+.logo {
+    margin: 30px 0 0;
+    width: 100px;
+}
+
+.header-text {
+    max-width: 350px;
+    margin-top: 140px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.common-btn {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid var(--primary-color); 
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.common-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+p {
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--grey-color);
+}
+
+.header-text button {
+    margin: 20px 0 16px;
+}
+
+.line-1 {
+    margin-top: 20px;
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color);
+    display: inline-block;
+}
+
+.line-2 {
+    width: 80px;
+    height: 1px;
+    background: var(--primary-color);
+    display: inline-block;
+}
+
+.line-3 {
+    width: 60px;
+    height: 1px;
+    background: var(--primary-color);
+    display: inline-block;
+}
+
+.line {
+    line-height: 12px;
+}
