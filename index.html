@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comlete WebSite Design using HTML and CSS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <section id="header">
@@ -26,12 +27,12 @@
 
     <nav id="sideNav">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">COURSES</a></li>
-            <li><a href="#">OFFER</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#offer">OFFER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <img src="images/menu.png" id = "menuBtn">
@@ -106,16 +107,115 @@
                 </div>
             </div>
             <div class="course-right-col">
-                <img src="images/course.png">
+                <img src="images/course.png"
             </div>
         </div>
     </section>
 
 
+<!--Offer-->
+
+<section id="offer">
+    <div class="about-left-col">
+        <img src="images/offer.png" alt="about">
+    </div>
+    <div class="about-right-col">
+        <div class="about-text">
+            <h1>Limitless learning, <br> limitless possibilities</h1>
+            <span class="square"></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, inventore accusamus consequuntur molestias nulla debitis, consequatur atque aspernatur facere labore libero numquam sunt voluptate!</p>
+            <button class="common-btn">Start Free Trial</button>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+        </div>
+    </div>
+</section>
 
 
+<!--Contact-->
+
+<section id="contact">
+    <div class="container contact-row">
+        <div class="contact-left-col">
+            <h1>Sign Up to join our <br> learning community</h1>
+            <form>
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <input type="password" placeholder="Enter Password">
+                <div class="btn-box">
+                    <button class="common-btn">Sign Up</button>
+                    <button class="common-btn">Start Free Trial</button>
+                </div>
+            </form>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+        </div>
+        <div class="contact-right-col">
+            <img src="images/contact.png">
+        </div>
+    </div>
+</section>
 
 
+<!--Footer-->
+
+<section id="footer">
+    <div class="container footer-row">
+        <hr>
+        <div class="footer-left-col">
+            <div class="footer-links">
+                <div class="link-title">
+                    <h4>Product</h4>
+                    <small>Our Plan</small><br>
+                    <small>Free Trial</small>
+                </div>
+                <div class="link-title">
+                    <h4>About Us</h4>
+                    <small>Request Demo</small><br>
+                    <small>FAQs</small>
+                </div>
+                <div class="link-title">
+                    <h4>Support</h4>
+                    <small>Features</small><br>
+                    <small>Contact Us</small>
+                </div>
+                <div class="link-title">
+                    <h4>Explore</h4>
+                    <small>Find a nonprofit</small><br>
+                    <small>Corporate Solution</small>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-col">
+            <div class="footer-info">
+                <div class="copyright-text">
+                    <small>support@xypo.com</small>
+                    <small>copyright text</small>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/logo.png">
+                    <button class="common-btn">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--social-icons-->
+
+<div class="social-icons">
+    <img src="images/facebook.png">
+    <img src="images/instagram.png">
+    <img src="images/twitter.png">
+    <img src="images/linkedin.png">
+</div>
 
 
     <script>
@@ -129,6 +229,10 @@
                 sideNav.style.right = "-250px"
             }
         }
+    	let scroll = new SmoothScroll('a[href*="#"]', {
+	        speed: 1000,
+	        speedAsDuration: true
+        });
     </script>
 
 
